@@ -1,0 +1,137 @@
+
+@use "./colors" as *;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+html , body{
+    scroll-behavior: smooth;
+}
+@mixin head_bottom_p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+@mixin head_title{
+    margin-bottom: 30px;
+    color: $address_color;
+    font-size: 45px;
+}
+@mixin head_title2{
+    margin-bottom: 30px;
+    color: white;
+    font-size: 45px;
+}
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@mixin center1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin center2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin padding{
+    padding-top:100px ;
+    padding-bottom: 100px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+@mixin p767-f_s{
+    font-size: 15px;
+}
+@mixin h767-f_s{
+    font-size:35px;
+}
+
+/*back-ground */
+@mixin back-ground{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*background-black-cover */
+@mixin back-ground-black-cover{
+    position: absolute;
+    content: " ";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.522);
+    transition: .5s;
+}
+/*button styles*/
+@mixin head_btn{
+    background-color: $address_color;
+    color: white;
+    padding:10px 30px;
+    font-weight: bold;
+    font-size: 25px;
+    border: 3px solid $address_color;
+    position: relative;
+    transition: 0.5s;
+}
+@mixin head-hover-btn{
+    background-color: transparent;
+    border: 3px solid $address_color;
+    color: $address_color;
+}
+@mixin head_btn767{
+    background-color: $address_color;
+    color: white;
+    padding:8px 18px;
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+    transition: 0.5s;
+}
+@mixin after-before_btn{
+    position: absolute;
+    content: " ";
+    bottom: -1px;
+    width: 0%;
+    height: 4px;
+    background-color: $address_color;
+    transition: .5s;
+}
+@mixin before_btn{
+    position: absolute;
+    content: " ";
+    bottom: -1px;
+    right: 0;
+    width: 0%;
+    height: 4px;
+    background-color: $address_color;
+    transition: .5s;
+}
+@mixin after-before_btn_hover{
+    width: 50.5%;
+}
+
+
